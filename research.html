@@ -23,11 +23,11 @@
 			<link rel="stylesheet" href="css/linearicons.css">
 			<link rel="stylesheet" href="css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">			
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">				
 			<link rel="stylesheet" href="css/nice-select.css">							
 			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">			
-			<link rel="stylesheet" href="css/jquery-ui.css">			
+			<link rel="stylesheet" href="css/owl.carousel.css">					
 			<link rel="stylesheet" href="css/main.css">
 		</head>
 		<body>	
@@ -84,80 +84,94 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Interests				
+								Research				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="services.html"> Interests</a></p>
+							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="research.html"> Research</a></p>
 						</div>	
 					</div>
 				</div>
 			</section>
 			<!-- End banner Area -->	
-
-			<!-- Start services Area -->
-			<section class="services-area section-gap">
-					<div class="container">
-						<div class="row d-flex justify-content-center">
-							<div class="menu-content  col-lg-7">
-								<div class="title text-center">
-									<h1 class="mb-10">Interests and Experiences</h1>
-									
-								</div>
+				<!-- Start portfolio-area Area -->
+            <section class="portfolio-area section-gap" id="portfolio">
+                <div class="container">
+		            <div class="row d-flex justify-content-center">
+		                <div class="menu-content pb-70 col-lg-8">
+		                    <div class="title text-center">
+		                        <h1 class="mb-10">My Latest Projects</h1>
+		                    </div>
+		                </div>
+		            </div>
+                    
+                    <div class="filters">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".ai">Artificial Intelligence</li>
+                            <li data-filter=".ml">Machine Learning</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="filters-content">
+                        <div class="row grid">
+                            <div class="single-portfolio col-sm-4 all ml">
+                            	<div class="relative">
+	                            	<div class="thumb">
+	                            		<div class="overlay overlay-bg"></div>
+	                            		 <img class="image img-fluid" src="img/banglaocr.jpg" alt="">
+	                            	</div>
+									<a href="https://github.com/mushfiqur11/bangla-ocr" target="_blank">	
+									  <div class="middle">
+									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
+									  </div>
+								</a>                              		
+                            	</div>
+								<div class="p-inner">
+								    <h4>Bangla OCR</h4>
+									<div class="cat">Deeplearning Model with Keras</div>
+								</div>					                               
 							</div>
-						</div>						
-						<div class="row">
-							<div class="col-lg-4 col-md-6">
-								<div class="single-services">
-									<span class="lnr lnr-pie-chart"></span>
-									<a href="research.html"><h4>Artificial Intelligence</h4></a>
-									<p>
-										Machine Learning and Deeplearning research, algorithm development and deployment
-									</p>
-								</div>
+							<div class="single-portfolio col-sm-4 all ai">
+                            	<div class="relative">
+	                            	<div class="thumb">
+	                            		<div class="overlay overlay-bg"></div>
+	                            		 <img class="image img-fluid" src="img/banglaocr.jpg" alt="">
+	                            	</div>
+									<a href="https://github.com/mushfiqur11/IntersectionManagementAI" target="_blank">	
+									  <div class="middle">
+									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
+									  </div>
+								</a>                              		
+                            	</div>
+								<div class="p-inner">
+								    <h4>Intersection Management</h4>
+									<div class="cat">Using MiniZinc and Python</div>
+								</div>					                               
 							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="single-services">
-									<span class="lnr lnr-picture"></span>
-									<a href="design.html"><h4>Designing</h4></a>
-									<p>
-										Graphics design using illustrator and 3d model creation using blender
-									</p>
-								</div>
+							<div class="single-portfolio col-sm-4 all ml">
+                            	<div class="relative">
+	                            	<div class="thumb">
+	                            		<div class="overlay overlay-bg"></div>
+	                            		 <img class="image img-fluid" src="img/banglaocr.jpg" alt="">
+	                            	</div>
+									<a href="https://github.com/mushfiqur11/cifar_parameter_reduction_by_Mashrur_and_Mushfiq" target="_blank">	
+									  <div class="middle">
+									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
+									  </div>
+								</a>                              		
+                            	</div>
+								<div class="p-inner">
+								    <h4>Parameter Reduction of Classification Models</h4>
+									<div class="cat">Deeplearning Algorithm Research</div>
+								</div>					                               
 							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="single-services">
-									<span class="lnr lnr-laptop-phone"></span>
-									<a href="gamedev.html"><h4>Game Development</h4></a>
-									<p>
-										PC and android game development using Unity and C#
-									</p>
-								</div>
-							</div>
-							
-							<div class="col-lg-6 col-md-6">
-								<div class="single-services">
-									<span class="lnr lnr-smartphone"></span>
-									<a href="pc.html"><h4>Software Development</h4></a>
-									<p>
-										Android and PC application development using Java, C++
-									</p>
-								</div>	
-							</div>
-							
-							<div class="col-lg-6 col-md-12">
-								<div class="single-services">
-									<span class="lnr lnr-picture"></span>
-									<a href="webdev.html"><h4>Web Development</h4></a>
-									<p>
-										Basic front-end web development using html, css-style and wordpress
-									</p>
-								</div>
-							</div>
-																				
-						</div>
-					</div>	
-				</section>
-				<!-- End services Area -->				
-	
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- End portfolio-area Area -->	
 
             <!-- start footer Area -->
             <footer class="footer-area section-gap">

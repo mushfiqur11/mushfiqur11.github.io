@@ -1,1 +1,1 @@
-The repository was created to host privacy policy for different applications
+This repository works as a portfolio of Md. Mushfiqur Rahman.

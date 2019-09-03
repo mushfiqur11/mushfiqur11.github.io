@@ -35,8 +35,8 @@ $(document).ready(function() {
 
      if(document.getElementById("facts-area")){
       $('.counter').counterUp({
-          delay: 10,
-          time: 1000
+          delay: 100,
+          time: 2500
       });
     }
 

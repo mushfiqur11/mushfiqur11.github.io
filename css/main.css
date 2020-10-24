@@ -2898,6 +2898,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+.align-right-all{
+  text-align: right;
+}
+
 /*--------- end price  Area -------------*/
 /*-------- start recent-blog Area -------------*/
 .recent-blog-area {

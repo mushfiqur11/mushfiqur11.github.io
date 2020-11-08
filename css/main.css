@@ -4489,3 +4489,7 @@ dl.accordion.time-line:before {
 /*-------- end footer Area -------------*/
 
 
+.section_zone {
+  display: grid;
+  grid-auto-flow: column;
+}

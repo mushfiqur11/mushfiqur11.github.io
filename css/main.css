@@ -2581,6 +2581,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .single-fact h1, .single-fact p {
   color: #fff;
+  display: inline;
 }
 
 .single-fact h1 {

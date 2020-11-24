@@ -2446,6 +2446,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 750px !important;
 }
 
+
+.author-bold{
+  color: #000000;
+  font-weight: 500;
+  display: inline;
+}
+.author{
+  color: #050505;
+  font-weight: 300;
+}
+
 .banner-left h6 {
   text-transform: uppercase;
   font-weight: 400;

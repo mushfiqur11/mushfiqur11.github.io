@@ -25,6 +25,18 @@
 		<!-- Site Title -->
 		<title>Md. Mushfiqur Rahman - Research</title>
 
+		<script type="text/javascript">
+			var arxiv_authorid = "0000-0003-3010-1198";
+			var arxiv_format = "arxiv";
+			var arxiv_includeSummary = 1;
+			var arxiv_max_entries = 0;
+		</script>
+		<style type="text/css">
+			div.arxivfeed {margin-bottom: 5px; width:700px;}
+			</style>
+		<script type="text/javascript" src="https://arxiv.org/js/myarticles.js"></script> 
+
+
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
 			CSS
@@ -107,96 +119,11 @@
 				<!-- Start portfolio-area Area -->
             <section class="portfolio-area section-gap" id="portfolio">
                 <div class="container">
-		            <div class="row d-flex justify-content-center">
-		                <div class="menu-content pb-70 col-lg-8">
-		                    <div class="title text-center">
-		                        <h1 class="mb-10">My Latest Projects</h1>
-		                    </div>
-		                </div>
-		            </div>
-                    
-                    <div class="filters">
-                        <ul>
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".ai">Artificial Intelligence</li>
-                            <li data-filter=".ml">Machine Learning</li>
-                            
-                        </ul>
-                    </div>
-                    
-                    <div class="filters-content">
-                        <div class="row grid">
-                            <div class="single-portfolio col-sm-4 all ml">
-                            	<div class="relative">
-	                            	<div class="thumb">
-	                            		<div class="overlay overlay-bg"></div>
-	                            		 <img class="image img-fluid" src="img/banglaocr.jpg" alt="">
-	                            	</div>
-									<a href="https://github.com/mushfiqur11/bangla-ocr" target="_blank">	
-									  <div class="middle">
-									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
-									  </div>
-								</a>                              		
-                            	</div>
-								<div class="p-inner">
-								    <h4>Bangla OCR</h4>
-									<div class="cat">Deeplearning Model with Keras</div>
-								</div>					                               
-							</div>
-							<div class="single-portfolio col-sm-4 all ai">
-                            	<div class="relative">
-	                            	<div class="thumb">
-	                            		<div class="overlay overlay-bg"></div>
-	                            		 <img class="image img-fluid" src="img/intersection.jpg" alt="">
-	                            	</div>
-									<a href="https://github.com/mushfiqur11/IntersectionManagementAI" target="_blank">	
-									  <div class="middle">
-									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
-									  </div>
-								</a>                              		
-                            	</div>
-								<div class="p-inner">
-								    <h4>Intersection Management</h4>
-									<div class="cat">Using MiniZinc and Python</div>
-								</div>					                               
-							</div>
-							<div class="single-portfolio col-sm-4 all ml">
-                            	<div class="relative">
-	                            	<div class="thumb">
-	                            		<div class="overlay overlay-bg"></div>
-	                            		 <img class="image img-fluid" src="img/cifar.png" alt="">
-	                            	</div>
-									<a href="https://github.com/mushfiqur11/cifar_parameter_reduction_by_Mashrur_and_Mushfiq" target="_blank">	
-									  <div class="middle">
-									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
-									  </div>
-								</a>                              		
-                            	</div>
-								<div class="p-inner">
-								    <h4>Parameter Reduction of Classification Models</h4>
-									<div class="cat">Deeplearning Algorithm Research</div>
-								</div>					                               
-							</div>
-							<div class="single-portfolio col-sm-4 all ml">
-                            	<div class="relative">
-	                            	<div class="thumb">
-	                            		<div class="overlay overlay-bg"></div>
-	                            		 <img class="image img-fluid" src="img/EEG.png" alt="">
-	                            	</div>
-									<!--<a href="https://github.com/mushfiqur11/bangla-ocr" target="_blank">	-->
-									  <div class="middle">
-									    <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
-									  </div>
-								</a>                              		
-                            	</div>
-								<div class="p-inner">
-								    <h4>Analysis of EEG Data for <b>Seizure prediction at the pre-ictal state</b> using Machine Learning</h4>
-									<div class="cat">Deeplearning Model with Keras</div>
-								</div>
-                            
-                        </div>
-                    </div>
-                    
+					<section class="recent-blog-area section-gap">
+						<div class="container">
+							<div id="arxivfeed"></div>
+						</div>
+					</section>
                 </div>
             </section>
             <!-- End portfolio-area Area -->	

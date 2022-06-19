@@ -92,7 +92,7 @@ $black			: #222;
 }
 
 body {
-  color: #777777;
+  color: #252525;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -919,8 +919,12 @@ td, th {
   }
 }
 
-b, sup, sub, u, del {
-  color: #8490ff;
+b, sup, sub, del {
+  color: #4c58be;
+}
+
+u {
+  color: #000000;
 }
 
 h1 {

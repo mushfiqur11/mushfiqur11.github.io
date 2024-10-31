@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violence Detection via OCR in Forensic Reports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        h1 {
+            color: #e1e2e1;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 20px 0;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .grid-item {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Violence Detection via OCR in Forensic Reports</h1>
+        <p>Exploring OCR and AI for Improved Analysis in Assault Cases</p>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#problem">Problem & Goal</a></li>
+                <li><a href="#data">Data & Workflow</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#future">Future Directions</a></li>
+            </ul>
+        </nav>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>This project addresses the need for automated violence detection in forensic reports through the use of Optical Character Recognition (OCR). By converting handwritten reports into machine-readable text, we aim to facilitate analysis while preserving critical information about injuries and assault indicators.</p>
+        </section>
+
+        <section id="problem">
+            <h2>Problem & Goal</h2>
+            <p>Despite advancements in Electronic Health Records (EHR), forensic reports often remain handwritten. This project aims to leverage OCR technology to ensure that vital information, such as injury mechanisms and anatomical details, is accurately preserved and accessible for further analysis in violence cases.</p>
+        </section>
+
+        <section id="data">
+            <h2>Data & Workflow</h2>
+            <p>We created synthetic reports for three case types: Domestic Violence, Physical Abuse, and Sexual Assault. OCR tools and Vision-based Large Language Models (Vision LLMs) were evaluated for their ability to extract and preserve information. Our workflow involved a comparative analysis of commercial OCR tools and open-source models like Llama-3.2-11B-Vision.</p>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>OCR Tools Evaluated</h3>
+                    <p>Tools like Google Cloud Vision and DocumentAI were assessed for accuracy and information retention in violence detection.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Metrics</h3>
+                    <p>We measured performance through Word Error Rates and Information Preservation Analysis, focusing on critical elements such as injury locations.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Sample Reports</h3>
+                    <p>We used three types of reports: Domestic Violence, Physical Abuse, and Sexual Assault, each tailored to evaluate OCR’s efficacy in retaining essential data.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="results">
+            <h2>Key Results</h2>
+            <p>The Cloud Vision API demonstrated the highest accuracy with a 0.17 Word Error Rate, and the Llama-3.2-11B-Vision model showed promise as a locally deployable alternative. These tools preserved 100% of anatomical details and achieved high accuracy in injury mechanism detection, crucial for violence identification.</p>
+        </section>
+
+        <section id="future">
+            <h2>Future Directions</h2>
+            <p>We plan to improve performance by fine-tuning Vision LLMs like Llama-3.2-11B-Vision and exploring integration with EHR systems to facilitate automated violence detection. Developing specialized forensic tools will also be a priority.</p>
+            <button class="btn">Contact Us</button>
+        </section>
+    </div>
+
+    <footer>
+        <p> 2024 Violence Detection OCR Project</p>
+    </footer>
+
+</body>
+</html>

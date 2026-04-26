@@ -1,0 +1,352 @@
+{
+  "profile": {
+    "name": "Md Mushfiqur Rahman",
+    "title": "PhD Candidate, Computer Science",
+    "institution": "George Mason University",
+    "location": "Fairfax, VA",
+    "photo": "assets/profile.png",
+    "objective": "I am a final year PhD candidate at George Mason University specializing in NLP and its applications in health, with a Master's degree in Computer Science (Machine Learning concentration) and a strong background in Mathematics. My research focuses on improving information accessibility in the healthcare domain and investigating how tone and dialect variations impact the robustness of large language models. I have interned at Amazon as an Applied Scientist and at the US Naval Research Laboratory, where I built a GAN-based image denoiser now actively used in the Hinode spacecraft. I have published 10 peer-reviewed papers, including 3 in top-tier journals, and am seeking research and industry positions at the intersection of NLP, healthcare AI, and LLM robustness."
+  },
+  "links": {
+    "email": "mrahma45@gmu.edu",
+    "phone": "571.668.1664",
+    "github": "https://github.com/mushfiqur11",
+    "linkedin": "https://linkedin.com/in/mushfiqur11",
+    "scholar": "https://scholar.google.com/citations?user=mushfiqur11&user=-g03AyEAAAAJ",
+    "website": "https://mushfiqur11.github.io"
+  },
+  "education": [
+    {
+      "degree": "PhD in Computer Science",
+      "institution": "George Mason University",
+      "location": "Fairfax, VA",
+      "period": "Aug 2021 \u2013 Dec 2026 (Expected)",
+      "details": "CGPA: 3.90 | Thesis: Advanced NLP in democratization of knowledge"
+    },
+    {
+      "degree": "MSc in Computer Science (ML Concentration)",
+      "institution": "George Mason University",
+      "location": "Fairfax, VA",
+      "period": "May 2024",
+      "details": "CGPA: 3.88"
+    },
+    {
+      "degree": "BSc in Computer Science and Engineering",
+      "institution": "Islamic University of Technology",
+      "location": "Gazipur, Bangladesh",
+      "period": "Jan 2017 \u2013 Feb 2021",
+      "details": "CGPA: 3.79"
+    }
+  ],
+  "employment": [
+    {
+      "title": "Graduate Research Assistant",
+      "org": "George Mason University",
+      "location": "Fairfax, VA",
+      "period": "Aug 2021 \u2013 Present",
+      "bullets": [
+        "Research on NLP with a focus on improving information accessibility in the healthcare domain. Published 5 research papers.",
+        "Investigating how tone and dialect variations impact the performance and robustness of LLMs, with the goal of developing models that can effectively address these challenges.",
+        "Studying LLM performance in key tasks such as conversational agents, information retrieval, and question-answering systems."
+      ]
+    },
+    {
+      "title": "Applied Scientist (Intern)",
+      "org": "Amazon",
+      "location": "Bellevue, WA",
+      "period": "May 2025 \u2013 Aug 2025",
+      "bullets": [
+        "Developed a jailbreaking method that achieves 55% success rate (1600bps improvement over SOTA) while being 38% faster and 27% more cost-efficient.",
+        "Built an end-to-end human-in-the-loop jailbreaking tool for Alexa+'s red team."
+      ]
+    },
+    {
+      "title": "Machine Learning Software Developer (Intern)",
+      "org": "US Naval Research Laboratory",
+      "location": "SW Washington, DC",
+      "period": "May 2024 \u2013 Aug 2024",
+      "bullets": [
+        "Designed a Retrieval-Augmented Generation pipeline, processing 100K+ technical documents to achieve real-time response rates.",
+        "Engineered the embedding and retrieval framework using MiniLMEmbedder and WindowRetriever, reducing memory footprint and computational load by 20%.",
+        "Integrated Llama-3.1-70B as the generative model for seamless interaction with the RAG system."
+      ]
+    },
+    {
+      "title": "Machine Learning Software Developer (Intern)",
+      "org": "US Naval Research Laboratory",
+      "location": "SW Washington, DC",
+      "period": "May 2023 \u2013 Aug 2023",
+      "bullets": [
+        "Built a GAN-based image denoiser for the EIS (Extreme-ultraviolet Image Spectrometer) machine hosted in the Hinode spacecraft.",
+        "The ML model removes 93% noise from EIS-generated images and achieves 0.48 average test error, significantly better than the previous best of 0.72.",
+        "Model is actively deployed in the Hinode spacecraft."
+      ]
+    },
+    {
+      "title": "Faculty (Lecturer)",
+      "org": "Military Institute of Science and Technology",
+      "location": "Dhaka, Bangladesh",
+      "period": "Mar 2021 \u2013 Aug 2021",
+      "bullets": [
+        "Taught 'Introduction to Artificial Intelligence' and 'Algorithms I'.",
+        "Co-supervised 3 undergraduate thesis projects related to machine learning."
+      ]
+    },
+    {
+      "title": "ML Research Intern",
+      "org": "Samsung R&D Institute Bangladesh",
+      "location": "Dhaka, Bangladesh",
+      "period": "Nov 2019 \u2013 Jan 2020",
+      "bullets": [
+        "Developed a deep learning model that generates 3D objects from equirectangular (box-map) images.",
+        "The GAN-like model (adjusted for spherical images) achieved 0.21 RMS error for the 3D vertices."
+      ]
+    },
+    {
+      "title": "Game Development Lead",
+      "org": "M-World",
+      "location": "Dhaka, Bangladesh",
+      "period": "Feb 2019 \u2013 Sept 2019",
+      "bullets": [
+        "Led a cross-functional team of 2 developers, a designer, and a QA tester to develop a hyper-casual mobile game for Android.",
+        "Managed the complete software development lifecycle from concept and design to deployment and post-launch support.",
+        "Utilized Agile methodologies, leading daily stand-ups and sprint planning to ensure milestones were met on schedule."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "LLM Robustness - Multi-turn Jailbreaking (ATTCK-R)",
+      "image": "assets/cards/attck_r_real.png",
+      "tags": [
+        "LLM Safety",
+        "Jailbreaking",
+        "Multi-turn",
+        "Adversarial ML"
+      ],
+      "description": "Developed two novel approaches \u2014 iterative tactic curation and informed traceback \u2014 for multi-turn LLM jailbreaking evaluation. Tactic curation increases attack success rate by 16% while informed traceback reduces cost by 12%, establishing a new framework for vulnerability detection in AI systems."
+    },
+    {
+      "title": "SPQA - Style Perturbations on QA Capabilities of LLMs",
+      "image": "assets/cards/spqa_real.jpg",
+      "tags": [
+        "LLM Robustness",
+        "QA",
+        "Style Perturbations",
+        "Evaluation"
+      ],
+      "link": "https://github.com/mushfiqur11/spqa",
+      "description": "Introduced SPQA, a novel evaluation framework to test the robustness of LLMs under style perturbations. Key finding: stylistic changes lead to measurable performance degradation even when semantic intent is fully preserved during perturbation \u2014 revealing a critical vulnerability in current LLM deployments."
+    },
+    {
+      "title": "Health Information Simplification and Summarization",
+      "image": "assets/cards/health_simplify_real.jpg",
+      "tags": [
+        "Health NLP",
+        "Text Simplification",
+        "RLHF",
+        "LLMs"
+      ],
+      "description": "Created a parallel text dataset for health-text simplification in collaboration with nurse practitioners and patient-communication experts. Fine-tuned GPT-4 and Llama-2 (with PPO and RLHF) to achieve SOTA results. Trained Llama-2 with 16-bit quantized Q-LoRA, minimizing GPU usage by 60% and training time by 90%.",
+      "link": "https://github.com/mushfiqur11/healthLiteracy"
+    },
+    {
+      "title": "Dialectal toxicity detection: Evaluating LLM-as-a-judge consistency across language varieties",
+      "image": "assets/cards/toxicity_real.png",
+      "tags": [
+        "Dialectal NLP",
+        "Toxicity Detection",
+        "LLM Evaluation",
+        "Multilingual"
+      ],
+      "description": "Evaluated the consistency of LLMs as judges for toxicity detection across different dialects of a language. Found significant inconsistencies in LLM judgments across dialects, highlighting the need for more robust and inclusive evaluation frameworks in multilingual NLP applications.",
+      "link": "https://github.com/ffaisal93/dialect_toxicity_llm_judge"
+    },
+    {
+      "title": "Cross-lingual Transfer: Tokenization vs Non-tokenization",
+      "image": "assets/cards/crosslingual_real.png",
+      "tags": [
+        "Cross-lingual NLP",
+        "BERT",
+        "PIXEL",
+        "Multilingual"
+      ],
+      "description": "Compared tokenization-based models (BERT, mBERT) with tokenization-free models (PIXEL, CANINE) across 19 source and 133 target languages for 3 common NLP tasks. Proposed a decision aid for text-representation selection, underscoring the importance of non-tokenization models for specific tasks.",
+      "link": "https://github.com/mushfiqur11/tokenfreetransfer"
+    },
+    {
+      "title": "Spectral Reconstruction of EIS Images with Conditional GAN",
+      "image": "assets/cards/eis_gan_real.jpg",
+      "tags": [
+        "GANs",
+        "Image Denoising",
+        "Hinode Spacecraft",
+        "cGAN"
+      ],
+      "description": "Compared four image reconstruction and denoising algorithms (GAN, cGAN, WGAN, and Autoencoder) for EIS solar observation images. The cGAN removes 93% of noise and improves denoising capabilities of the EIS instrument aboard the Hinode spacecraft. Model is actively deployed.",
+      "link": null
+    },
+    {
+      "title": "Video Captioning with Stacked Attention",
+      "image": "assets/cards/video_caption_real.png",
+      "tags": [
+        "Video Captioning",
+        "Attention Mechanisms",
+        "MSVD",
+        "Semantic"
+      ],
+      "description": "Compared different attention mechanisms for video captioning and created a stacked attention model achieving state-of-the-art performance on the MSVD dataset. A detailed ablation study demonstrated the contribution of stacked attention in retaining semantic information.",
+      "link": "https://github.com/mushfiqur11"
+    }
+  ],
+  "publications": [
+    {
+      "number": 1,
+      "authors": "Md Mushfiqur Rahman and Kevin Lybarger",
+      "year": "2025",
+      "title": "Evaluating health question-answering under readability-controlled style perturbations",
+      "venue": "Text Simplification, Accessibility and Readability (TSAR 2025), ACL",
+      "link": "https://aclanthology.org/2025.tsar-1.5.pdf",
+      "tags": [
+        "Health NLP",
+        "QA",
+        "Style Perturbations"
+      ]
+    },
+    {
+      "number": 2,
+      "authors": "Fahim Faisal, Md Mushfiqur Rahman, and Antonios Anastasopoulos",
+      "year": "2025",
+      "title": "Dialectal toxicity detection: Evaluating LLM-as-a-judge consistency across language varieties",
+      "venue": "EMNLP 2025 (Findings)",
+      "link": "https://aclanthology.org/2025.findings-emnlp.664/",
+      "tags": [
+        "Dialectal NLP",
+        "LLM Evaluation",
+        "Toxicity Detection"
+      ]
+    },
+    {
+      "number": 3,
+      "authors": "Md Mushfiqur Rahman and Harry Warren",
+      "year": "2025",
+      "title": "Application of a conditional generative adversarial network to denoising solar observations",
+      "venue": "Frontiers in Astronomy and Space Sciences, 12",
+      "link": "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2025.1541901/full",
+      "tags": [
+        "GAN",
+        "Image Denoising",
+        "Solar Observations"
+      ],
+      "highlight": "Journal"
+    },
+    {
+      "number": 4,
+      "authors": "Md Mushfiqur Rahman, Mohammad Sabik Irbaz, Kai North, Michelle S. Williams, Marcos Zampieri, and Kevin Lybarger",
+      "year": "2024",
+      "title": "Health text simplification: An annotated corpus for digestive cancer education and novel strategies for reinforcement learning",
+      "venue": "Journal of Biomedical Informatics, 158:104727",
+      "link": "https://doi.org/10.1016/j.jbi.2024.104727",
+      "tags": [
+        "Health NLP",
+        "Text Simplification",
+        "RLHF"
+      ],
+      "highlight": "Q1 Journal"
+    },
+    {
+      "number": 5,
+      "authors": "Md Mushfiqur Rahman, Fardin Ahsan Sakib, Fahim Faisal, and Antonios Anastasopoulos",
+      "year": "2023",
+      "title": "To token or not to token: A comparative study of text representations for cross-lingual transfer",
+      "venue": "Workshop on Multi-lingual Representation Learning (MRL), ACL",
+      "link": "https://aclanthology.org/2023.mrl-1.6/",
+      "tags": [
+        "Cross-lingual NLP",
+        "Tokenization",
+        "Multilingual"
+      ]
+    },
+    {
+      "number": 6,
+      "authors": "Fardin Ahsan Sakib, A H M Rezaul Karim, Saadat Hasan Khan, and Md Mushfiqur Rahman",
+      "year": "2023",
+      "title": "Intent detection and slot filling for home assistants: Dataset and analysis for Bangla and Sylheti",
+      "venue": "Workshop on Bangla Language Processing (BLP), ACL",
+      "link": "https://aclanthology.org/2023.banglalp-1.6/",
+      "tags": [
+        "Bangla NLP",
+        "Intent Detection",
+        "Low-resource"
+      ]
+    },
+    {
+      "number": 7,
+      "authors": "Bin Han, Haotian Zhu, Sitong Zhou, Sofia Ahmed, Md Mushfiqur Rahman, Fei Xia, and Kevin Lybarger",
+      "year": "2023",
+      "title": "HuskyScribe at MediQA-Sum 2023: Summarizing clinical dialogues with transformers",
+      "venue": "CLEF 2023, Thessaloniki, Greece",
+      "link": "https://ceur-ws.org/Vol-3497/paper-124.pdf",
+      "tags": [
+        "Clinical NLP",
+        "Summarization",
+        "Transformers"
+      ]
+    },
+    {
+      "number": 8,
+      "authors": "Refaat Mohammad Alamgir, Ali Abir Shuvro, Mueeze Al Mushabbir, Mohammed Ashfaq Raiyan, Nusrat Jahan Rani, Md Mushfiqur Rahman, Md. Hasanul Kabir, and Sabbir Ahmed",
+      "year": "2022",
+      "title": "Performance analysis of YOLO-based architectures for vehicle detection from traffic images in Bangladesh",
+      "venue": "25th International Conference on Computer and Information Technology (ICCIT)",
+      "link": "https://ieeexplore.ieee.org/document/10055758",
+      "tags": [
+        "Computer Vision",
+        "YOLO",
+        "Object Detection"
+      ]
+    },
+    {
+      "number": 9,
+      "authors": "Md Mushfiqur Rahman, Thasin Abedin, Khondokar SS Prottoy, Ayana Moshruba, and Fazlul Hasan Siddiqui",
+      "year": "2021",
+      "title": "Video captioning with stacked attention and semantic hard pull",
+      "venue": "PeerJ Computer Science",
+      "link": "https://doi.org/10.7717/peerj-cs.765",
+      "tags": [
+        "Video Captioning",
+        "Attention",
+        "Semantic"
+      ],
+      "highlight": "Q1 Journal"
+    },
+    {
+      "number": 10,
+      "authors": "Md Mushfiqur Rahman, Sabah Binte Noor, and Fazlul Hasan Siddiqui",
+      "year": "2020",
+      "title": "Automated large-scale class scheduling in MiniZinc",
+      "venue": "International Conference on Sustainable Technologies for Industry 4.0 (STI)",
+      "link": "https://ieeexplore.ieee.org/document/9350485",
+      "tags": [
+        "Scheduling",
+        "Constraint Programming",
+        "MiniZinc"
+      ]
+    }
+  ],
+  "talks": [
+    {
+      "title": "Leveraging Generative AI for Advanced Scientific Research: Breakthroughs and Barriers",
+      "event": "Naval Research Laboratory",
+      "location": "Washington, DC",
+      "year": "May 2024"
+    }
+  ],
+  "awards": [
+    "Distinguished Academic Achievement Award \u2014 George Mason University (2024)",
+    "Runner-up, Inter-University App Development Contest \u2014 IUT ICT Fest (2019)",
+    "Champion of ICT4D \u2014 4th AUW ICT Fest (2018)",
+    "National Topper in Mathematics \u2014 IAS (International Assessment for Schools) by UNSW (2008, 2014)",
+    "National Mathematical Olympiads Medals \u00d74 (2009, 2012, 2013, 2014)"
+  ]
+}

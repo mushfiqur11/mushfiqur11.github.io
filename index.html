@@ -10,6 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVS3F4CH0F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-ZVS3F4CH0F', { send_page_view: false });
+  </script>
+
   <style>
     /* ── Variables ───────────────────────────────────────── */
     :root {
@@ -498,6 +507,39 @@
     return e;
   };
 
+  /* ── Analytics helpers (GA4) ── */
+  const trackEvent = (name, params = {}) => {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', name, params);
+  };
+
+  const normalizeSection = (hashOrId = '') => {
+    const clean = String(hashOrId).replace(/^#/, '').trim();
+    return clean || 'about';
+  };
+
+  let lastTrackedSection = '';
+  const trackSectionView = (hashOrId, source = 'unknown') => {
+    const sectionId = normalizeSection(hashOrId);
+    if (sectionId === lastTrackedSection) return;
+
+    lastTrackedSection = sectionId;
+    const baseLocation = window.location.href.split('#')[0];
+    const pagePath = `/#${sectionId}`;
+    const pageLocation = `${baseLocation}#${sectionId}`;
+
+    trackEvent('page_view', {
+      page_title: document.title,
+      page_path: pagePath,
+      page_location: pageLocation
+    });
+
+    trackEvent('section_view', {
+      section_id: sectionId,
+      source
+    });
+  };
+
   let data;
   try {
     const r = await fetch('data.json');
@@ -542,6 +584,63 @@
     a.href = d.pre+val; a.title = d.label; a.target='_blank'; a.rel='noopener';
     a.innerHTML = `<i class="${d.icon}"></i>`;
     $('socialLinks').appendChild(a);
+  });
+
+  /* ── Click tracking (nav, contact, external links) ── */
+  document.addEventListener('click', (ev) => {
+    const a = ev.target.closest('a[href]');
+    if (!a) return;
+
+    const href = a.getAttribute('href') || '';
+    const text = (a.textContent || '').trim().slice(0, 100);
+
+    if (href.startsWith('#')) {
+      const sectionId = normalizeSection(href);
+      const linkLocation = a.closest('.mobile-nav')
+        ? 'mobile_nav'
+        : a.closest('.sb-nav')
+          ? 'sidebar_nav'
+          : 'in_page';
+
+      trackEvent('nav_click', {
+        section_id: sectionId,
+        link_location: linkLocation,
+        link_text: text || sectionId
+      });
+
+      trackSectionView(sectionId, 'nav_click');
+      return;
+    }
+
+    if (href.startsWith('mailto:') || href.startsWith('tel:')) {
+      trackEvent('contact_click', {
+        method: href.startsWith('mailto:') ? 'email' : 'phone',
+        contact_target: href.replace(/^(mailto:|tel:)/, ''),
+        link_text: text || 'contact'
+      });
+      return;
+    }
+
+    const isHttp = /^https?:/i.test(href);
+    if (!isHttp) return;
+
+    try {
+      const url = new URL(href, window.location.href);
+      if (url.origin === window.location.origin) return;
+
+      trackEvent('external_link_click', {
+        link_url: url.href,
+        link_domain: url.hostname,
+        link_text: text || 'external_link',
+        outbound: true
+      });
+    } catch {
+      /* ignore malformed URL */
+    }
+  });
+
+  window.addEventListener('hashchange', () => {
+    trackSectionView(window.location.hash, 'hash_change');
   });
 
   /* ── Education ── */
@@ -654,10 +753,14 @@
         if (e.isIntersecting) {
           document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
           document.querySelector(`.nav-link[href="#${e.target.id}"]`)?.classList.add('active');
+          trackSectionView(e.target.id, 'scroll');
         }
       });
     }, {rootMargin:'-25% 0px -65% 0px'}).observe(s);
   });
+
+  /* initial virtual pageview for SPA/anchor navigation */
+  trackSectionView(window.location.hash || '#about', 'initial_load');
 
   /* ── Reveal ── */
   $('loadingScreen').classList.add('hidden');

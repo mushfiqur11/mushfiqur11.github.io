@@ -1,11 +1,11 @@
 {
   "profile": {
     "name": "Md Mushfiqur Rahman",
-    "title": "PhD Candidate, Computer Science",
-    "institution": "George Mason University",
-    "location": "Fairfax, VA",
+    "title": "Applied Scientist II",
+    "institution": "Amazon",
+    "location": "Bellevue, WA",
     "photo": "assets/profile.png",
-    "objective": "I am a final year PhD candidate at George Mason University specializing in NLP and its applications in health, with a Master's degree in Computer Science (Machine Learning concentration) and a strong background in Mathematics. My research focuses on improving information accessibility in the healthcare domain and investigating how tone and dialect variations impact the robustness of large language models. I have interned at Amazon as an Applied Scientist and at the US Naval Research Laboratory, where I built a GAN-based image denoiser now actively used in the Hinode spacecraft. I have published 10 peer-reviewed papers, including 3 in top-tier journals, and am seeking research and industry positions at the intersection of NLP, healthcare AI, and LLM robustness."
+    "objective": "I am an Applied Scientist II at Amazon working on Responsible AI and AI safety for Alexa, and a final year PhD candidate in Computer Science at George Mason University specializing in NLP and its applications in health. I hold a Master's degree in Computer Science (Machine Learning concentration) and have a strong background in Mathematics. My research assesses the deployment-readiness and robustness of AI systems under stress, spanning multi-turn jailbreaking of protected LLMs, policy-aligned safety evaluation and policy-adaptive alignment for health chatbots, and the robustness of LLMs to style, tone, and dialect variation. Previously, I interned at Amazon as an Applied Scientist and at the US Naval Research Laboratory, where I built a GAN-based image denoiser now actively used in the Hinode spacecraft. I have published 11 peer-reviewed papers, including 3 in top-tier journals."
   },
   "links": {
     "email": "mrahma45@gmu.edu",
@@ -21,7 +21,7 @@
       "institution": "George Mason University",
       "location": "Fairfax, VA",
       "period": "Aug 2021 \u2013 Dec 2026 (Expected)",
-      "details": "CGPA: 3.90 | Thesis: Advanced NLP in democratization of knowledge"
+      "details": "CGPA: 3.92 | Thesis: Assessing deployment-readiness and robustness of AI systems under stress"
     },
     {
       "degree": "MSc in Computer Science (ML Concentration)",
@@ -40,14 +40,12 @@
   ],
   "employment": [
     {
-      "title": "Graduate Research Assistant",
-      "org": "George Mason University",
-      "location": "Fairfax, VA",
-      "period": "Aug 2021 \u2013 Present",
+      "title": "Applied Scientist II",
+      "org": "Amazon",
+      "location": "Bellevue, WA",
+      "period": "Aug 2026 \u2013 Present",
       "bullets": [
-        "Research on NLP with a focus on improving information accessibility in the healthcare domain. Published 5 research papers.",
-        "Investigating how tone and dialect variations impact the performance and robustness of LLMs, with the goal of developing models that can effectively address these challenges.",
-        "Studying LLM performance in key tasks such as conversational agents, information retrieval, and question-answering systems."
+        "Critical work on Responsible AI and AI safety for Alexa."
       ]
     },
     {
@@ -58,6 +56,17 @@
       "bullets": [
         "Developed a jailbreaking method that achieves 55% success rate (1600bps improvement over SOTA) while being 38% faster and 27% more cost-efficient.",
         "Built an end-to-end human-in-the-loop jailbreaking tool for Alexa+'s red team."
+      ]
+    },
+    {
+      "title": "Graduate Research Assistant",
+      "org": "George Mason University",
+      "location": "Fairfax, VA",
+      "period": "Aug 2021 \u2013 Jul 2026",
+      "bullets": [
+        "Research on NLP with a focus on improving information accessibility in the healthcare domain. Published 5 research papers.",
+        "Investigating how tone and dialect variations impact the performance and robustness of LLMs, with the goal of developing models that can effectively address these challenges.",
+        "Studying LLM performance in key tasks such as conversational agents, information retrieval, and question-answering systems."
       ]
     },
     {
@@ -116,6 +125,17 @@
   ],
   "projects": [
     {
+      "title": "Health Jailbreaking - Policy-aligned Benchmark and Policy-adaptive Defense (HealthJailbreak)",
+      "image": "assets/cards/healthjailbreak_real.png",
+      "tags": [
+        "LLM Safety",
+        "Health NLP",
+        "Jailbreaking",
+        "DPO"
+      ],
+      "description": "Built HealthJailbreak, a robust benchmark for health jailbreaking with strong literature grounding, cataloging 136 risks from 40 health-AI papers and consolidating them with NIST AI RMF and WHO guidance into 21 sub-policies and 700 harmful and matched-safe goal pairs across 5 health tasks. Introduced a scoping mechanism that exposes more vulnerabilities in health chatbots, showing that general benchmarks overstate the safety gained by scoping. Developed Policy-swap DPO, a method that adapts to changing policies and scopes, lowering attack success by 16% over the strongest defense prompt and by 9% over fixed-policy DPO on a held-out task."
+    },
+    {
       "title": "LLM Robustness - Multi-turn Jailbreaking (ATTCK-R)",
       "image": "assets/cards/attck_r_real.png",
       "tags": [
@@ -124,7 +144,8 @@
         "Multi-turn",
         "Adversarial ML"
       ],
-      "description": "Developed two novel approaches \u2014 iterative tactic curation and informed traceback \u2014 for multi-turn LLM jailbreaking evaluation. Tactic curation increases attack success rate by 16% while informed traceback reduces cost by 12%, establishing a new framework for vulnerability detection in AI systems."
+      "description": "Developed ATTCK-R, a planning-driven multi-turn red-teaming framework for protected black-box LLMs that models jailbreaking as long-horizon trajectory optimization over a structured belief state. Introduced two novel approaches, iterative tactic curation and informed traceback. Tactic curation increases attack success rate by 16% while informed traceback reduces cost by 12%. Evaluated across 9 widely used LLMs behind a prompt-based safety protection, ATTCK-R consistently outperforms strong recent multi-turn jailbreaking frameworks. Published at EMNLP 2026 (Findings).",
+      "link": "https://github.com/mushfiqur11/jailbreak"
     },
     {
       "title": "SPQA - Style Perturbations on QA Capabilities of LLMs",
@@ -203,6 +224,30 @@
     {
       "number": 1,
       "authors": "Md Mushfiqur Rahman and Kevin Lybarger",
+      "year": "2026",
+      "title": "HealthJailbreak: Scope-aware jailbreak evaluation and policy-conditioned alignment for health chatbots",
+      "venue": "Under review",
+      "tags": [
+        "LLM Safety",
+        "Health NLP",
+        "Jailbreaking"
+      ]
+    },
+    {
+      "number": 2,
+      "authors": "Md Mushfiqur Rahman, Tobias Rohde, Rahul Tripathi, Khalil Elkhalil, and Kevin Lybarger",
+      "year": "2026",
+      "title": "ATTCK-R: Knowledge-aware long-horizon jailbreaking for protected LLMs",
+      "venue": "EMNLP 2026 (Findings)",
+      "tags": [
+        "LLM Safety",
+        "Jailbreaking",
+        "Multi-turn"
+      ]
+    },
+    {
+      "number": 3,
+      "authors": "Md Mushfiqur Rahman and Kevin Lybarger",
       "year": "2025",
       "title": "Evaluating health question-answering under readability-controlled style perturbations",
       "venue": "Text Simplification, Accessibility and Readability (TSAR 2025), ACL",
@@ -214,7 +259,7 @@
       ]
     },
     {
-      "number": 2,
+      "number": 4,
       "authors": "Fahim Faisal, Md Mushfiqur Rahman, and Antonios Anastasopoulos",
       "year": "2025",
       "title": "Dialectal toxicity detection: Evaluating LLM-as-a-judge consistency across language varieties",
@@ -227,7 +272,7 @@
       ]
     },
     {
-      "number": 3,
+      "number": 5,
       "authors": "Md Mushfiqur Rahman and Harry Warren",
       "year": "2025",
       "title": "Application of a conditional generative adversarial network to denoising solar observations",
@@ -241,7 +286,7 @@
       "highlight": "Journal"
     },
     {
-      "number": 4,
+      "number": 6,
       "authors": "Md Mushfiqur Rahman, Mohammad Sabik Irbaz, Kai North, Michelle S. Williams, Marcos Zampieri, and Kevin Lybarger",
       "year": "2024",
       "title": "Health text simplification: An annotated corpus for digestive cancer education and novel strategies for reinforcement learning",
@@ -255,7 +300,7 @@
       "highlight": "Q1 Journal"
     },
     {
-      "number": 5,
+      "number": 7,
       "authors": "Md Mushfiqur Rahman, Fardin Ahsan Sakib, Fahim Faisal, and Antonios Anastasopoulos",
       "year": "2023",
       "title": "To token or not to token: A comparative study of text representations for cross-lingual transfer",
@@ -268,7 +313,7 @@
       ]
     },
     {
-      "number": 6,
+      "number": 8,
       "authors": "Fardin Ahsan Sakib, A H M Rezaul Karim, Saadat Hasan Khan, and Md Mushfiqur Rahman",
       "year": "2023",
       "title": "Intent detection and slot filling for home assistants: Dataset and analysis for Bangla and Sylheti",
@@ -281,7 +326,7 @@
       ]
     },
     {
-      "number": 7,
+      "number": 9,
       "authors": "Bin Han, Haotian Zhu, Sitong Zhou, Sofia Ahmed, Md Mushfiqur Rahman, Fei Xia, and Kevin Lybarger",
       "year": "2023",
       "title": "HuskyScribe at MediQA-Sum 2023: Summarizing clinical dialogues with transformers",
@@ -294,7 +339,7 @@
       ]
     },
     {
-      "number": 8,
+      "number": 10,
       "authors": "Refaat Mohammad Alamgir, Ali Abir Shuvro, Mueeze Al Mushabbir, Mohammed Ashfaq Raiyan, Nusrat Jahan Rani, Md Mushfiqur Rahman, Md. Hasanul Kabir, and Sabbir Ahmed",
       "year": "2022",
       "title": "Performance analysis of YOLO-based architectures for vehicle detection from traffic images in Bangladesh",
@@ -307,7 +352,7 @@
       ]
     },
     {
-      "number": 9,
+      "number": 11,
       "authors": "Md Mushfiqur Rahman, Thasin Abedin, Khondokar SS Prottoy, Ayana Moshruba, and Fazlul Hasan Siddiqui",
       "year": "2021",
       "title": "Video captioning with stacked attention and semantic hard pull",
@@ -321,7 +366,7 @@
       "highlight": "Q1 Journal"
     },
     {
-      "number": 10,
+      "number": 12,
       "authors": "Md Mushfiqur Rahman, Sabah Binte Noor, and Fazlul Hasan Siddiqui",
       "year": "2020",
       "title": "Automated large-scale class scheduling in MiniZinc",
